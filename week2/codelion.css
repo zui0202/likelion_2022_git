@@ -1,11 +1,14 @@
-p {
-    font-size: 30px;
+footer {
+    text-align: center;
+    background-color: #1E1E1E;
+    color: #919191;
+    font-size: 12px;
 }
 
-.big-font {
-    font-size: 40px;
-}
-
-.small-font {
-    font-size: 15px;
+.mainbox {
+    border: 5px solid black;
+    width: 610px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
 }
