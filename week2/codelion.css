@@ -1,5 +1,11 @@
-footer {
-    text-align: center;
-    background-color: black;
-    color: white;
+p {
+    font-size: 30px;
+}
+
+.big-font {
+    font-size: 40px;
+}
+
+.small-font {
+    font-size: 15px;
 }
