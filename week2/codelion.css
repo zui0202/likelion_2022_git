@@ -4,35 +4,42 @@
     font-family: 'Montserrat';
 }
 
-body, h1, h2 {
+body,h1,h2 {
     margin:0px;
     padding:0px;
 }
+
 
 body {
     min-width: fit-content;
 }
 
 h1 {
-    font-size: 36px;
+    font-size:36px;
     font-weight: bold;
     font-style: italic;
     margin-bottom: 8px;
 }
 
+
 h2 {
-    font-size: 20px;
-    font-weight: lighter;
+    font-size:20px;
     color:#282828;
-    border-bottom: 1px solid #ebebeb;
+    font-weight: lighter;
     margin-bottom: 16px;
+    border-bottom: 1px solid #ebebeb;
     padding-bottom: 5px;
 }
 
-.name-text {                                  
-    font-size: 17px;                         
-    color: #7c7c7c;
+.name-text {
+    font-size:16px;
+    color:#7c7c7c;
     font-weight: bold;
+}
+
+.about-me-text {
+    font-size:10px;
+    line-height: 16px;
 }
 
 .mainbox {
@@ -42,7 +49,25 @@ h2 {
     margin-right: auto;
     margin-left: auto;
     border: 1px solid #ebebeb;
-    box-shadow: 0 1px 20px 0 rgba(0, 0, 0, 0.1)
+    box-shadow: 0 1px 20px 0 rgba(0, 0, 0, 0.1);
+}
+
+section {
+    margin-bottom:24px;
+}
+
+.title-text {
+    font-size:11px;
+    font-weight: bold;
+    color: #282828;
+    float: left;
+}
+
+.year-text{
+    font-size:11px;
+    font-weight: bold;
+    color: #282828;
+    float: right;
 }
 
 footer {
@@ -53,31 +78,16 @@ footer {
     color: #919191;
 }
 
-section {
-    margin-bottom: 24px;
+.float-wrap {
+    overflow: hidden;
 }
 
-.name-text {
-    font-size: 16px;
-    color: #7c7c7c;
-    font-weight: bold;
+.desc-text {
+    font-size: 9px;
 }
 
-.about-me-text {
-    font-size: 10px;
-    line-height: 16px;
-}
-
-.title-text {
-    font-size: 11px;
-    font-weight: bold;
+.desc-subtext {
+    font-size: 9px;
     color: #282828;
-    float: left;
-}
-
-.year-text {
-    font-size: 11px;
-    font-weight: bold;
-    color: #282828;
-    float: right;
+    padding-left: 16px;
 }
