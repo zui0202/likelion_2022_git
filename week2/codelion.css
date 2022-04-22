@@ -1,3 +1,14 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800&display=swap');
+
+
+* {
+    font-family: 'Montserrat';
+}
+
+body, h1, h2 {
+    margin: 0px;
+    padding: 0px;
+}
 .name-text {
     font-size: 20px;
 }
