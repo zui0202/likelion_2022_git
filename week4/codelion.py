@@ -1,6 +1,7 @@
-import random
+information = {"고향":"수원", "취미":"영화관람", "좋아하는 음식":"국수"}
+print(information)
+print(information.get("취미"))
 
-lunch = random.choice(["된장찌개","피자","제육볶음"])
-lunch = "냉장고"
-dinner = random.choice(["김밥","쫄면","돈까스"])
-print(lunch)
+information = {"특기":"피아노", "사는곳":"서울"}
+print(information.get("특기"))
+print(information.get("사는곳"))
