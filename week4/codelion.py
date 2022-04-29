@@ -1,35 +1,19 @@
-import random
-import time
+def make_dolcelatte():
+    print("1. 얼음을 넣는다.")
+    print("2. 연유를 30ml 넣는다.")
+    print("3. 찬 우유를 넣는다.")
+    print("4. 에스프레소샷을 넣는다.")
 
-lunch = ["된장찌개", "피자", "제육볶음", "짜장면"]
+def make_blueberry_smoothie():
+    print("1. 블루베리 20g을 넣는다.")
+    print("2. 우유 300ml를 넣는다.")
+    print("3. 얼음을 넣는다.")
+    print("4. 믹서기에 간다.")
 
-while True:
-    print(lunch)
-    item = input("음식을 추가 해주세요 : ")
-    if(item == "q"):
-        break
-    else:
-        lunch.append(item)
-print(lunch)
+def make_simple_latte():
+    print("1. 커피를 넣는다.")
+    print("2. 우유를 넣는다.")
+    print("3. 신나게 섞는다.")
 
-set_lunch = set(lunch)
-while True:
-    print(set_lunch)
-    item = input("음식을 삭제해주세요 : ")
-    if(item == "q"):
-        break
-    else:
-        set_lunch = set_lunch - set([item])
-
-print(set_lunch, "중에서 선택합니다.")
-print("5")
-time.sleep(1)
-print("4")
-time.sleep(1)
-print("3")
-time.sleep(1)
-print("2")
-time.sleep(1)
-print("1")
-time.sleep(1)
-print(random.choice(list(set_lunch)))
+make_dolcelatte()
+make_dolcelatte()
