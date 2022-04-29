@@ -1,4 +1,10 @@
-menu1 = set(["된장찌개", "피자", "제육볶음"])
-menu2 = set(["된장찌개", "떡국", "김밥"])
-menu3 = menu1 - menu2
-print(menu3)
+import random
+
+food = random.choice(["된장찌개","피자","제육볶음"])
+
+print(food)
+if(food == "제육볶음"):
+    print("곱배기 주세요")
+else:
+    print("그냥 주세요")
+print("종료")
