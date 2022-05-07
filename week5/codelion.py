@@ -1,31 +1,15 @@
-import requests
-import json
+from googletrans import Translator
 
-city = "Seoul"
-apikey = "0234e2af821de496d8d03289c9497cff"
-lang = "kr"
+translator = Translator()
 
-api = f"""http://api.openweathermap.org/data/2.5/\
-    weather?q={city}&appid={apikey}&lang={lang}&units=metric"""
+# sentence = "안녕하세요 코드라이언입니다."
+sentence = input("번역을 원하는 문장을 입력해주세요 : ")
+dest = input("어떤 언어로 번역을 원하시나요?")
 
-result = requests.get(api)
-#print(result.text)
+result = translator.translate(sentence,dest)
+detected = translator.detect(sentence)
 
-data = json.loads(result.text)
-
-print(data["name"],"의 날씨입니다.")
-print("날씨는 ",data["weather"][0]["description"],"입니다.")
-print("현재 온도는 ",data["main"]["temp"],"입니다.")
-print("하지만 체감 온도는 ",data["main"]["feels_like"],"입니다.")
-# 최저 기온 : main - temp_min
-print("최저 기온은 ",data["main"]["temp_min"],"입니다.")
-# 최고 기온 : main - temp_max
-print("최고 기온은 ",data["main"]["temp_max"],"입니다.")
-# 습도 : main - humidity
-print("습도는 ",data["main"]["humidity"],"입니다.")
-# 기압 : main - pressure
-print("기압은 ",data["main"]["pressure"],"입니다.")
-# 풍향 : wind - deg
-print("풍향은 ",data["wind"]["deg"],"입니다.")
-# 풍속 : wind - speed
-print("풍속은 ",data["wind"]["speed"],"입니다.")
+print("===========출 력 결 과===========")
+print(detected.lang,":",sentence)
+print(result.dest,":",result.text)
+print("=================================")
