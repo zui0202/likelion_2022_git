@@ -1,5 +1,8 @@
+import requests
+
 city = "Seoul"
 apikey = "################################"
 api = f"http://api.openweathermap.org/data/2.5/weather?q={city}&appid={apikey}"
 
-print(api)
+result = requests.get(api)
+print(result.text)
